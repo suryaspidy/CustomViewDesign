@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomView" customModule="CustomViewDesign" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xMH-d6-97q">
+                    <rect key="frame" x="0.0" y="126" width="414" height="736"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i1a-c0-FGN">
+                            <rect key="frame" x="0.0" y="28" width="414" height="708"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HN9-Se-W4F">
+                                    <rect key="frame" x="0.0" y="163" width="414" height="545"/>
+                                    <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="414" id="M6B-Sv-V5r"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="grP-DU-Oad">
+                                    <rect key="frame" x="30" y="19" width="306" height="34"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EEg-Kh-7CU">
+                                            <rect key="frame" x="46.5" y="8" width="259.5" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="Ycq-y7-hgw"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHZ-UO-gxz">
+                                            <rect key="frame" x="20" y="12" width="10.5" height="10"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="10.289999999999999" id="bSU-3v-F2u"/>
+                                                <constraint firstAttribute="height" constant="10.220000000000001" id="hcn-Hi-brQ"/>
+                                            </constraints>
+                                            <state key="normal" title="-" image="magnifyingglass" catalog="system"/>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="gHZ-UO-gxz" firstAttribute="top" secondItem="grP-DU-Oad" secondAttribute="top" constant="12" id="8i7-yN-7Pt"/>
+                                        <constraint firstAttribute="height" constant="34" id="Ars-dX-kGN"/>
+                                        <constraint firstItem="EEg-Kh-7CU" firstAttribute="top" secondItem="grP-DU-Oad" secondAttribute="top" constant="8" id="GkZ-Uv-gaN"/>
+                                        <constraint firstItem="EEg-Kh-7CU" firstAttribute="leading" secondItem="gHZ-UO-gxz" secondAttribute="trailing" constant="16.440000000000001" id="IhS-U7-oq0"/>
+                                        <constraint firstAttribute="width" constant="306" id="Q4V-JH-TuG"/>
+                                        <constraint firstItem="gHZ-UO-gxz" firstAttribute="leading" secondItem="grP-DU-Oad" secondAttribute="leading" constant="20" id="Zuo-0s-M2m"/>
+                                        <constraint firstAttribute="bottom" secondItem="EEg-Kh-7CU" secondAttribute="bottom" constant="5" id="a23-mj-HN7"/>
+                                        <constraint firstAttribute="trailing" secondItem="EEg-Kh-7CU" secondAttribute="trailing" id="zXz-HO-OL3"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sod-UK-1nE">
+                                    <rect key="frame" x="367" y="34" width="16" height="4"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="16" id="Dlg-eU-CHC"/>
+                                        <constraint firstAttribute="height" constant="4" id="aIK-kp-GlL"/>
+                                    </constraints>
+                                    <state key="normal" title="-"/>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8gX-Ir-mdm">
+                                    <rect key="frame" x="0.0" y="53" width="414" height="110"/>
+                                    <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="110" id="p2I-Nl-eSC"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="8gX-Ir-mdm" firstAttribute="leading" secondItem="i1a-c0-FGN" secondAttribute="leading" id="2OV-dc-dmS"/>
+                                <constraint firstAttribute="bottom" secondItem="HN9-Se-W4F" secondAttribute="bottom" id="6Gv-9x-ivj"/>
+                                <constraint firstItem="8gX-Ir-mdm" firstAttribute="top" secondItem="i1a-c0-FGN" secondAttribute="top" constant="53" id="Bz6-xn-y40"/>
+                                <constraint firstItem="8gX-Ir-mdm" firstAttribute="top" secondItem="grP-DU-Oad" secondAttribute="bottom" id="H6M-5Q-IhT"/>
+                                <constraint firstItem="HN9-Se-W4F" firstAttribute="top" secondItem="i1a-c0-FGN" secondAttribute="top" constant="163" id="MN1-Op-D41"/>
+                                <constraint firstItem="grP-DU-Oad" firstAttribute="top" secondItem="i1a-c0-FGN" secondAttribute="top" constant="19" id="Nk1-o1-7lm"/>
+                                <constraint firstAttribute="trailing" secondItem="Sod-UK-1nE" secondAttribute="trailing" constant="31" id="eSf-Qn-qEW"/>
+                                <constraint firstItem="Sod-UK-1nE" firstAttribute="leading" secondItem="grP-DU-Oad" secondAttribute="trailing" constant="31" id="h2l-kT-5qR"/>
+                                <constraint firstItem="HN9-Se-W4F" firstAttribute="top" secondItem="8gX-Ir-mdm" secondAttribute="bottom" id="j8e-IW-HUI"/>
+                                <constraint firstAttribute="bottom" secondItem="Sod-UK-1nE" secondAttribute="bottom" constant="670" id="q1K-Xi-4H4"/>
+                                <constraint firstItem="Sod-UK-1nE" firstAttribute="top" secondItem="i1a-c0-FGN" secondAttribute="top" constant="34" id="qNb-EG-rkv"/>
+                                <constraint firstItem="HN9-Se-W4F" firstAttribute="leading" secondItem="i1a-c0-FGN" secondAttribute="leading" id="rzw-35-Wih"/>
+                                <constraint firstItem="HN9-Se-W4F" firstAttribute="top" secondItem="8gX-Ir-mdm" secondAttribute="bottom" id="uM6-uc-F5O"/>
+                                <constraint firstAttribute="trailing" secondItem="grP-DU-Oad" secondAttribute="trailing" constant="78" id="uoe-b4-GoQ"/>
+                                <constraint firstAttribute="trailing" secondItem="HN9-Se-W4F" secondAttribute="trailing" id="zRt-A5-sHB"/>
+                                <constraint firstItem="grP-DU-Oad" firstAttribute="leading" secondItem="i1a-c0-FGN" secondAttribute="leading" constant="30" id="zu7-5S-1ck"/>
+                                <constraint firstAttribute="trailing" secondItem="8gX-Ir-mdm" secondAttribute="trailing" id="zwo-rm-eaz"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2HF-7w-S4U">
+                            <rect key="frame" x="192" y="19" width="30" height="5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="5" id="Ycx-9p-zEL"/>
+                                <constraint firstAttribute="width" constant="30" id="aoZ-x8-cQG"/>
+                            </constraints>
+                            <state key="normal" title="---">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="2HF-7w-S4U" firstAttribute="top" secondItem="xMH-d6-97q" secondAttribute="top" constant="19" id="1dv-ze-AOM"/>
+                        <constraint firstItem="i1a-c0-FGN" firstAttribute="leading" secondItem="xMH-d6-97q" secondAttribute="leading" id="79Y-QJ-iSh"/>
+                        <constraint firstAttribute="bottom" secondItem="i1a-c0-FGN" secondAttribute="bottom" id="GW2-w1-EZh"/>
+                        <constraint firstAttribute="trailing" secondItem="i1a-c0-FGN" secondAttribute="trailing" id="JEr-8h-ugL"/>
+                        <constraint firstAttribute="trailing" secondItem="2HF-7w-S4U" secondAttribute="trailing" constant="192" id="TPU-kx-LXi"/>
+                        <constraint firstItem="i1a-c0-FGN" firstAttribute="top" secondItem="xMH-d6-97q" secondAttribute="top" constant="28" id="Yos-pb-E2G"/>
+                        <constraint firstAttribute="bottom" secondItem="2HF-7w-S4U" secondAttribute="bottom" constant="712" id="ekD-SG-U0c"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xMH-d6-97q" secondAttribute="trailing" id="I71-IX-0fF"/>
+                <constraint firstItem="xMH-d6-97q" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Xim-l5-uXw"/>
+                <constraint firstItem="xMH-d6-97q" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="edZ-66-Tgf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="xMH-d6-97q" secondAttribute="bottom" id="j2v-g5-NnS"/>
+            </constraints>
+            <connections>
+                <outlet property="appearedView" destination="i1a-c0-FGN" id="6YF-GG-4Bv"/>
+                <outlet property="barBtn" destination="2HF-7w-S4U" id="Swl-6s-sDW"/>
+                <outlet property="collectionViewArea" destination="8gX-Ir-mdm" id="H5M-fz-EZH"/>
+                <outlet property="extendedView" destination="xMH-d6-97q" id="IX4-Bc-33I"/>
+                <outlet property="searchArea" destination="EEg-Kh-7CU" id="rCq-PV-d27"/>
+                <outlet property="tableViewArea" destination="HN9-Se-W4F" id="lRu-kz-NOr"/>
+                <outlet property="textFieldView" destination="grP-DU-Oad" id="QMY-cx-jJr"/>
+            </connections>
+            <point key="canvasLocation" x="253.62318840579712" y="370.3125"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
