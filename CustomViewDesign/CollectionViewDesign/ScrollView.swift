@@ -1,14 +1,15 @@
 //
-//  ModelView.swift
+//  ScrollView.swift
 //  CustomViewDesign
 //
-//  Created by surya-zstk231 on 01/06/21.
+//  Created by surya-zstk231 on 02/06/21.
 //
 
 import UIKit
 
-class ModelView: UIView, UITextFieldDelegate {
+class ScrollView: UIView, UITextFieldDelegate {
 
+    @IBOutlet weak var scrollViewArea: UIScrollView!
     @IBOutlet weak var eclispeBtn: UIButton!
     @IBOutlet weak var searchArea: UITextField!
     @IBOutlet weak var extendedView: UIView!
@@ -54,7 +55,7 @@ class ModelView: UIView, UITextFieldDelegate {
         tableViewArea.topAnchor.constraint(equalTo: collectionViewArea.bottomAnchor, constant: 0).isActive = true
     }
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        collectionViewArea.heightAnchor.constraint(equalToConstant: 0).isActive = true 
+        collectionViewArea.heightAnchor.constraint(equalToConstant: 0).isActive = true
         return true
     }
     
@@ -104,3 +105,4 @@ class ModelView: UIView, UITextFieldDelegate {
     }
 
 }
+

@@ -30,11 +30,19 @@ class MainVc: UIViewController {
     
     func addCustomView(){
         let tableView = Bundle.main.loadNibNamed("ModelView", owner: self, options: nil)?[0] as? ModelView
+
         if let customView = tableView {
+            
+//            customView.width = width
+//            customView.height = height
+//            customView.scrollViewArea.translatesAutoresizingMaskIntoConstraints = false
+//            customView.scrollViewArea.heightAnchor.constraint(equalToConstant: height).isActive = true
+//            customView.scrollViewArea.widthAnchor.constraint(equalToConstant: width).isActive = true
+            
             customView.translatesAutoresizingMaskIntoConstraints = false
             customView.widthAnchor.constraint(equalToConstant: width).isActive = true
             customView.heightAnchor.constraint(equalToConstant: height).isActive = true
-            
+
 
             customView.extendedView.translatesAutoresizingMaskIntoConstraints = false
             customView.extendedView.widthAnchor.constraint(equalToConstant: width).isActive = true
@@ -44,7 +52,7 @@ class MainVc: UIViewController {
 
             customView.barBtn.translatesAutoresizingMaskIntoConstraints = false
             customView.barBtn.leadingAnchor.constraint(equalTo: customView.leadingAnchor, constant: (width/2)-15).isActive = true
-            
+
             customView.tableViewArea.translatesAutoresizingMaskIntoConstraints = false
             customView.tableViewArea.bottomAnchor.constraint(equalTo: customView.extendedView.bottomAnchor, constant: 0).isActive = true
             customView.tableViewArea.topAnchor.constraint(equalTo: customView.collectionViewArea.bottomAnchor, constant: 0).isActive = true

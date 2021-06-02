@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,6 +31,8 @@
 		2DF58B7426667D560048FCAE /* ModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF58B7326667D560048FCAE /* ModelView.swift */; };
 		2DFB2CB826673DCC00CFE879 /* NewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DFB2CB726673DCC00CFE879 /* NewView.xib */; };
 		2DFB2CBA2667408800CFE879 /* NewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB2CB92667408800CFE879 /* NewView.swift */; };
+		2DFB2CBC2667882000CFE879 /* ScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DFB2CBB2667882000CFE879 /* ScrollView.xib */; };
+		2DFB2CBE2667E0DB00CFE879 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB2CBD2667E0DB00CFE879 /* ScrollView.swift */; };
 		3AA9A45DD91D140E85E7924F /* Pods_CustomViewDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66B6D5EBCBD6EED13FD4979 /* Pods_CustomViewDesign.framework */; };
 		FBBCD85B919FCADBFDFC2FE9 /* Pods_CustomViewDesignTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76464D1907EB3C95DA4AF4E /* Pods_CustomViewDesignTests.framework */; };
 /* End PBXBuildFile section */
@@ -83,6 +85,8 @@
 		2DF58B7326667D560048FCAE /* ModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelView.swift; sourceTree = "<group>"; };
 		2DFB2CB726673DCC00CFE879 /* NewView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewView.xib; sourceTree = "<group>"; };
 		2DFB2CB92667408800CFE879 /* NewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewView.swift; sourceTree = "<group>"; };
+		2DFB2CBB2667882000CFE879 /* ScrollView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollView.xib; sourceTree = "<group>"; };
+		2DFB2CBD2667E0DB00CFE879 /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
 		57D374B7647234ED31736B79 /* Pods-CustomViewDesign-CustomViewDesignUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomViewDesign-CustomViewDesignUITests.debug.xcconfig"; path = "Target Support Files/Pods-CustomViewDesign-CustomViewDesignUITests/Pods-CustomViewDesign-CustomViewDesignUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		58FB72C5370D2A019AE32691 /* Pods-CustomViewDesignTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomViewDesignTests.release.xcconfig"; path = "Target Support Files/Pods-CustomViewDesignTests/Pods-CustomViewDesignTests.release.xcconfig"; sourceTree = "<group>"; };
 		7C484BE4341243B0E7067424 /* Pods-CustomViewDesign-CustomViewDesignUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomViewDesign-CustomViewDesignUITests.release.xcconfig"; path = "Target Support Files/Pods-CustomViewDesign-CustomViewDesignUITests/Pods-CustomViewDesign-CustomViewDesignUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +166,7 @@
 				2DF58B7126667D310048FCAE /* ModelView.xib */,
 				2DFB2CB726673DCC00CFE879 /* NewView.xib */,
 				2DFB2CB92667408800CFE879 /* NewView.swift */,
+				2DFB2CBB2667882000CFE879 /* ScrollView.xib */,
 			);
 			path = CustomViewDesign;
 			sourceTree = "<group>";
@@ -202,6 +207,7 @@
 				2DF58B6B266638760048FCAE /* CollectionUIView.swift */,
 				2DF58B6D2666393C0048FCAE /* CollectionViewDesignCell.swift */,
 				2DF58B6E2666393C0048FCAE /* CollectionViewDesignCell.xib */,
+				2DFB2CBD2667E0DB00CFE879 /* ScrollView.swift */,
 			);
 			path = CollectionViewDesign;
 			sourceTree = "<group>";
@@ -216,7 +222,6 @@
 				F8D7C018523A9401823DFEE7 /* Pods-CustomViewDesignTests.debug.xcconfig */,
 				58FB72C5370D2A019AE32691 /* Pods-CustomViewDesignTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -343,6 +348,7 @@
 				2DFB2CB826673DCC00CFE879 /* NewView.xib in Resources */,
 				2DF58B6A266638680048FCAE /* CollectionUIView.xib in Resources */,
 				2DF58B62266609960048FCAE /* SFProText-Regular.ttf in Resources */,
+				2DFB2CBC2667882000CFE879 /* ScrollView.xib in Resources */,
 				2DF58B7226667D310048FCAE /* ModelView.xib in Resources */,
 				2DF58B702666393C0048FCAE /* CollectionViewDesignCell.xib in Resources */,
 				2DF58B4E2665F6FD0048FCAE /* TableUIView.xib in Resources */,
@@ -477,6 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DF58B6C266638760048FCAE /* CollectionUIView.swift in Sources */,
+				2DFB2CBE2667E0DB00CFE879 /* ScrollView.swift in Sources */,
 				2DF58B4C2665F6EE0048FCAE /* TableUIView.swift in Sources */,
 				2DF58B6F2666393C0048FCAE /* CollectionViewDesignCell.swift in Sources */,
 				2DFB2CBA2667408800CFE879 /* NewView.swift in Sources */,

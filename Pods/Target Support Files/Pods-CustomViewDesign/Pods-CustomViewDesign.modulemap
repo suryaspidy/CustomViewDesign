@@ -1,0 +1,6 @@
+framework module Pods_CustomViewDesign {
+  umbrella header "Pods-CustomViewDesign-umbrella.h"
+
+  export *
+  module * { export * }
+}
