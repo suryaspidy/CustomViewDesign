@@ -20,8 +20,6 @@ class ModelView: UIView, UITextFieldDelegate {
     @IBOutlet weak var textFieldView: UIView!
     
     
-    var width:CGFloat = 0
-    var height:CGFloat = 0
     override func awakeFromNib() {
         addTableView()
         customised()
@@ -31,43 +29,29 @@ class ModelView: UIView, UITextFieldDelegate {
         
     }
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-      }
-      
-      //initWithCode to init view from xib or storyboard
-      required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-      }
-    
-    override var intrinsicContentSize: CGSize{
-//        appearedView.frame.size = CGSize(width: width, height: height)
-        return CGSize(width: width, height: height)
-    }
-    
-    override func prepareForInterfaceBuilder() {
-             invalidateIntrinsicContentSize()
-    }
     
     @IBAction func eclipseBtnPressed(_ sender: UIButton) {
+        finish()
+    }
+    
+    func finish(){
         collectionViewArea.heightAnchor.constraint(equalToConstant: 110).isActive = true
-        tableViewArea.topAnchor.constraint(equalTo: collectionViewArea.bottomAnchor, constant: 0).isActive = true
+        collectionViewArea.alpha = 1
+        collectionViewArea.isUserInteractionEnabled = true
     }
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        collectionViewArea.heightAnchor.constraint(equalToConstant: 0).isActive = true 
+        collectionViewArea.heightAnchor.constraint(equalToConstant: 19).isActive = true
+        collectionViewArea.alpha = 0
+        collectionViewArea.isUserInteractionEnabled = false
         return true
     }
     
-    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
-        collectionViewArea.heightAnchor.constraint(equalToConstant: 110).isActive = true
-    }
     
     func customised(){
         appearedView.layer.cornerRadius = 26
         appearedView.layer.maskedCorners = [.layerMinXMinYCorner,.layerMaxXMinYCorner]
         appearedView.layer.masksToBounds = true
         appearedView.layer.borderWidth = 2
-//        appearedView.layer.borderColor = CGColor(red: 255, green: 255, blue: 255, alpha: 1)
         appearedView.layer.borderColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1).cgColor
         
         
@@ -75,9 +59,6 @@ class ModelView: UIView, UITextFieldDelegate {
         tableViewArea.layer.maskedCorners = [.layerMinXMinYCorner,.layerMaxXMinYCorner]
         tableViewArea.layer.masksToBounds = true
         textFieldView.layer.cornerRadius = textFieldView.frame.height/2
-//        extendedView.backgroundColor = UIColor.init(cgColor: CGColor(red: 0, green: 0, blue: 0, alpha: 0.1))
-        
-//        extendedView.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.1)
         extendedView.backgroundColor = .none
     }
     

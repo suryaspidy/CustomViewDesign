@@ -39,11 +39,10 @@
                                             </constraints>
                                             <state key="normal" image="magnifyingglass" catalog="system"/>
                                         </button>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SLr-Pt-S0V">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="fghjk" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SLr-Pt-S0V">
                                             <rect key="frame" x="42" y="8" width="275" height="21"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="34" id="ccq-C6-cP4"/>
-                                                <constraint firstAttribute="height" constant="21" id="t7S-0D-NdB"/>
+                                                <constraint firstAttribute="height" constant="21" id="ccq-C6-cP4"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
@@ -51,11 +50,11 @@
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
-                                        <constraint firstItem="SLr-Pt-S0V" firstAttribute="top" secondItem="fyv-0j-DHO" secondAttribute="top" constant="8" id="1K7-xw-yXe"/>
+                                        <constraint firstItem="SLr-Pt-S0V" firstAttribute="top" secondItem="fyv-0j-DHO" secondAttribute="topMargin" id="0Ww-Px-UXA"/>
                                         <constraint firstAttribute="trailing" secondItem="SLr-Pt-S0V" secondAttribute="trailing" id="88p-3r-bwn"/>
                                         <constraint firstItem="49n-Zv-ecd" firstAttribute="top" secondItem="fyv-0j-DHO" secondAttribute="top" constant="10" id="B43-3e-7eX"/>
-                                        <constraint firstAttribute="bottom" secondItem="SLr-Pt-S0V" secondAttribute="bottom" constant="5" id="DdU-8v-8v9"/>
                                         <constraint firstItem="49n-Zv-ecd" firstAttribute="leading" secondItem="fyv-0j-DHO" secondAttribute="leading" constant="20" id="Lwz-XJ-6Vh"/>
+                                        <constraint firstAttribute="bottom" secondItem="SLr-Pt-S0V" secondAttribute="bottom" constant="5" id="N8l-xH-ZFH"/>
                                         <constraint firstItem="SLr-Pt-S0V" firstAttribute="leading" secondItem="49n-Zv-ecd" secondAttribute="trailing" constant="10" id="uXp-Fa-Ynh"/>
                                         <constraint firstAttribute="height" constant="34" id="w2g-nv-2tI"/>
                                     </constraints>
@@ -102,6 +101,7 @@
                         <constraint firstAttribute="trailing" secondItem="mef-1y-SCC" secondAttribute="trailing" id="H2F-Si-oTZ"/>
                         <constraint firstItem="mef-1y-SCC" firstAttribute="top" secondItem="rbs-2S-X8r" secondAttribute="top" id="HFS-RF-NEL"/>
                         <constraint firstItem="Zqe-Y8-W8Z" firstAttribute="top" secondItem="g4P-1m-vvW" secondAttribute="bottom" id="IHB-wj-ZDZ"/>
+                        <constraint firstItem="g4P-1m-vvW" firstAttribute="top" secondItem="rbs-2S-X8r" secondAttribute="top" constant="53" id="SoH-6Y-bnK"/>
                         <constraint firstAttribute="bottom" secondItem="Zqe-Y8-W8Z" secondAttribute="bottom" id="bqI-v1-sz0"/>
                         <constraint firstItem="Zqe-Y8-W8Z" firstAttribute="top" secondItem="g4P-1m-vvW" secondAttribute="bottom" id="ri1-Ts-41x"/>
                         <constraint firstAttribute="trailing" secondItem="Zqe-Y8-W8Z" secondAttribute="trailing" id="tKd-XT-YHi"/>
@@ -122,6 +122,7 @@
                 <outlet property="appearedView" destination="rbs-2S-X8r" id="WoY-j6-7kg"/>
                 <outlet property="collectionViewArea" destination="g4P-1m-vvW" id="sP3-Gn-iqh"/>
                 <outlet property="eclipseBtn" destination="Q6u-Ji-thE" id="TO5-NF-vSR"/>
+                <outlet property="extendedView" destination="rbs-2S-X8r" id="y6K-0Z-UQe"/>
                 <outlet property="searchArea" destination="SLr-Pt-S0V" id="xd0-PM-o9N"/>
                 <outlet property="tableViewArea" destination="Zqe-Y8-W8Z" id="PR8-Y0-035"/>
                 <outlet property="textFieldView" destination="fyv-0j-DHO" id="fCx-Gh-U4V"/>

@@ -16,6 +16,8 @@ class TableUIView: UIView {
     override func awakeFromNib() {
         tableViewFetchArea.register(UINib(nibName: "TableViewDesignCell", bundle: nil), forCellReuseIdentifier: "CustomTableViewID")
         
+        tableViewFetchArea.register(UINib(nibName: "CollectionViewTableViewCell", bundle: nil), forCellReuseIdentifier: "CollectionViewTableViewCell")
+        
         addHeader()
         
         tableViewFetchArea.dataSource = self
@@ -43,6 +45,12 @@ extension TableUIView: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        if indexPath.row == 0 {
+//            let cell = tableView.dequeueReusableCell(withIdentifier: "CollectionViewTableViewCell", for: indexPath) as! CollectionViewTableViewCell
+//            return cell
+//        }
+        
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewID", for: indexPath) as! TableViewDesignCell
         cell.nameLabel.text = nameArr[indexPath.row]
         cell.emailLabel.text = emailArr[indexPath.row]

@@ -12,21 +12,26 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TableUIView" customModule="CustomViewDesign" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="554"/>
+            <rect key="frame" x="0.0" y="0.0" width="590" height="643"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PxP-1T-mOa">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="554"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PxP-1T-mOa">
+                    <rect key="frame" x="0.0" y="0.0" width="590" height="643"/>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="PxP-1T-mOa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BL3-PZ-I2A"/>
+                <constraint firstAttribute="bottom" secondItem="PxP-1T-mOa" secondAttribute="bottom" id="UyT-fK-Sm0"/>
+                <constraint firstItem="PxP-1T-mOa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="WOo-hW-4Rf"/>
+                <constraint firstAttribute="trailing" secondItem="PxP-1T-mOa" secondAttribute="trailing" id="mUn-RM-a6p"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="tableViewFetchArea" destination="PxP-1T-mOa" id="TRy-Q3-GKw"/>
             </connections>
-            <point key="canvasLocation" x="18.840579710144929" y="108.48214285714285"/>
+            <point key="canvasLocation" x="146.37681159420291" y="138.28125"/>
         </view>
     </objects>
     <resources>

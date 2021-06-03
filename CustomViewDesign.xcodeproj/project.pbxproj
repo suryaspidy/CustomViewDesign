@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		023EE426350D298D14C60FA4 /* Pods_CustomViewDesign_CustomViewDesignUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A90E7BD3F89E8E937D30D90 /* Pods_CustomViewDesign_CustomViewDesignUITests.framework */; };
+		2D046CB026689E2000E5E43E /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D046CAE26689E2000E5E43E /* CollectionViewTableViewCell.swift */; };
+		2D046CB126689E2000E5E43E /* CollectionViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D046CAF26689E2000E5E43E /* CollectionViewTableViewCell.xib */; };
 		2DF58B1C2665F64C0048FCAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF58B1B2665F64C0048FCAE /* AppDelegate.swift */; };
 		2DF58B1E2665F64C0048FCAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF58B1D2665F64C0048FCAE /* SceneDelegate.swift */; };
 		2DF58B232665F64C0048FCAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DF58B212665F64C0048FCAE /* Main.storyboard */; };
@@ -56,6 +58,8 @@
 
 /* Begin PBXFileReference section */
 		022351A3A51F297579A177F9 /* Pods-CustomViewDesign.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomViewDesign.debug.xcconfig"; path = "Target Support Files/Pods-CustomViewDesign/Pods-CustomViewDesign.debug.xcconfig"; sourceTree = "<group>"; };
+		2D046CAE26689E2000E5E43E /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
+		2D046CAF26689E2000E5E43E /* CollectionViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewTableViewCell.xib; sourceTree = "<group>"; };
 		2DF58B182665F64C0048FCAE /* CustomViewDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomViewDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DF58B1B2665F64C0048FCAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DF58B1D2665F64C0048FCAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +129,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D046CAD26689DFB00E5E43E /* ModelClasses */ = {
+			isa = PBXGroup;
+			children = (
+				2DFB2CBD2667E0DB00CFE879 /* ScrollView.swift */,
+				2DF58B5A2665FC3E0048FCAE /* CustomView.swift */,
+				2DF58B5C266601590048FCAE /* CustomView.xib */,
+				2DFB2CB726673DCC00CFE879 /* NewView.xib */,
+				2DFB2CB92667408800CFE879 /* NewView.swift */,
+				2DFB2CBB2667882000CFE879 /* ScrollView.xib */,
+				2D046CAE26689E2000E5E43E /* CollectionViewTableViewCell.swift */,
+				2D046CAF26689E2000E5E43E /* CollectionViewTableViewCell.xib */,
+			);
+			path = ModelClasses;
+			sourceTree = "<group>";
+		};
 		2DF58B0F2665F64C0048FCAE = {
 			isa = PBXGroup;
 			children = (
@@ -161,12 +180,8 @@
 				2DF58B4F2665F7480048FCAE /* TableViewDesign */,
 				2DF58B542665FB130048FCAE /* MainVc.swift */,
 				2DF58B7326667D560048FCAE /* ModelView.swift */,
-				2DF58B5A2665FC3E0048FCAE /* CustomView.swift */,
-				2DF58B5C266601590048FCAE /* CustomView.xib */,
+				2D046CAD26689DFB00E5E43E /* ModelClasses */,
 				2DF58B7126667D310048FCAE /* ModelView.xib */,
-				2DFB2CB726673DCC00CFE879 /* NewView.xib */,
-				2DFB2CB92667408800CFE879 /* NewView.swift */,
-				2DFB2CBB2667882000CFE879 /* ScrollView.xib */,
 			);
 			path = CustomViewDesign;
 			sourceTree = "<group>";
@@ -207,7 +222,6 @@
 				2DF58B6B266638760048FCAE /* CollectionUIView.swift */,
 				2DF58B6D2666393C0048FCAE /* CollectionViewDesignCell.swift */,
 				2DF58B6E2666393C0048FCAE /* CollectionViewDesignCell.xib */,
-				2DFB2CBD2667E0DB00CFE879 /* ScrollView.swift */,
 			);
 			path = CollectionViewDesign;
 			sourceTree = "<group>";
@@ -352,6 +366,7 @@
 				2DF58B7226667D310048FCAE /* ModelView.xib in Resources */,
 				2DF58B702666393C0048FCAE /* CollectionViewDesignCell.xib in Resources */,
 				2DF58B4E2665F6FD0048FCAE /* TableUIView.xib in Resources */,
+				2D046CB126689E2000E5E43E /* CollectionViewTableViewCell.xib in Resources */,
 				2DF58B252665F64F0048FCAE /* Assets.xcassets in Resources */,
 				2DF58B232665F64C0048FCAE /* Main.storyboard in Resources */,
 				2DF58B5D266601590048FCAE /* CustomView.xib in Resources */,
@@ -484,6 +499,7 @@
 			files = (
 				2DF58B6C266638760048FCAE /* CollectionUIView.swift in Sources */,
 				2DFB2CBE2667E0DB00CFE879 /* ScrollView.swift in Sources */,
+				2D046CB026689E2000E5E43E /* CollectionViewTableViewCell.swift in Sources */,
 				2DF58B4C2665F6EE0048FCAE /* TableUIView.swift in Sources */,
 				2DF58B6F2666393C0048FCAE /* CollectionViewDesignCell.swift in Sources */,
 				2DFB2CBA2667408800CFE879 /* NewView.swift in Sources */,

@@ -33,6 +33,7 @@ class NewView: UIView, UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         collectionViewArea.heightAnchor.constraint(equalToConstant: 0).isActive = true
         tableViewArea.bottomAnchor.constraint(equalTo: appearedView.bottomAnchor, constant: 0).isActive = true
+        
         return true
     }
     
