@@ -133,6 +133,7 @@
                 <outlet property="appearedView" destination="L7B-fV-yH0" id="C0a-kA-ekL"/>
                 <outlet property="barBtn" destination="cKO-GU-CiU" id="mSz-kn-7dx"/>
                 <outlet property="collectionViewArea" destination="rXE-wA-jFP" id="u8a-0U-3nb"/>
+                <outlet property="collectionViewHeightConstrain" destination="Lmo-E8-mjM" id="GEF-i3-yOY"/>
                 <outlet property="eclispeBtn" destination="ZGO-2s-uRH" id="q2c-Hk-uy1"/>
                 <outlet property="extendedView" destination="GaI-cQ-tKQ" id="ek9-b1-WLV"/>
                 <outlet property="searchArea" destination="Sda-jA-OX3" id="A6T-el-TMx"/>

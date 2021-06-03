@@ -15,6 +15,7 @@ class ModelView: UIView, UITextFieldDelegate {
     @IBOutlet weak var appearedView: UIView!
     @IBOutlet weak var tableViewArea: UIView!
     
+    @IBOutlet weak var collectionViewHeightConstrain: NSLayoutConstraint!
     @IBOutlet weak var barBtn: UIButton!
     @IBOutlet weak var collectionViewArea: UIView!
     @IBOutlet weak var textFieldView: UIView!
@@ -31,16 +32,14 @@ class ModelView: UIView, UITextFieldDelegate {
     
     
     @IBAction func eclipseBtnPressed(_ sender: UIButton) {
-        finish()
-    }
-    
-    func finish(){
-        collectionViewArea.heightAnchor.constraint(equalToConstant: 110).isActive = true
+        collectionViewHeightConstrain.constant = 110
         collectionViewArea.alpha = 1
         collectionViewArea.isUserInteractionEnabled = true
     }
+    
+    
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        collectionViewArea.heightAnchor.constraint(equalToConstant: 19).isActive = true
+        collectionViewHeightConstrain.constant = 19
         collectionViewArea.alpha = 0
         collectionViewArea.isUserInteractionEnabled = false
         return true

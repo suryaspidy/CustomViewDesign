@@ -13,13 +13,11 @@ class MainVc: UIViewController {
     @IBOutlet weak var viewAddedArea: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewAddedArea.backgroundColor = .none
         addCustomView()
     }
     
     
-    @IBAction func ButtonTapped(_ sender: UIButton) {
-        addCustomView()
-    }
     
     func addCustomView(){
         let tableView = Bundle.main.loadNibNamed("ModelView", owner: self, options: nil)?[0] as? ModelView

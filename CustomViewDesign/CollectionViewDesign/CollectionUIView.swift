@@ -13,6 +13,8 @@ class CollectionUIView: UIView {
     @IBOutlet weak var collectionView: UICollectionView!
     
     
+    let name =  ["Nairobi","Daniel","Queen","Richard","Mia","John","Isabella","Ronald","Amelia","George","Sophia","Christopher","Charlotte","DomNick","Ava","David","Emma","James","Olivia","Parker"]
+    
     override func awakeFromNib() {
         collectionView.register(UINib(nibName: "CollectionViewDesignCell", bundle: nil), forCellWithReuseIdentifier: "CustomCollectionViewID")
         collectionView.dataSource = self
@@ -22,11 +24,13 @@ class CollectionUIView: UIView {
 
 extension CollectionUIView: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return name.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCollectionViewID", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCollectionViewID", for: indexPath) as! CollectionViewDesignCell
+        cell.collectionViewNameArea.text = name[indexPath.row]
+        cell.collectionViewImageArea.image = UIImage(named: name[indexPath.row])
         return cell
     }
     

@@ -24,7 +24,6 @@
 		2DF58B552665FB130048FCAE /* MainVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF58B542665FB130048FCAE /* MainVc.swift */; };
 		2DF58B5B2665FC3E0048FCAE /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF58B5A2665FC3E0048FCAE /* CustomView.swift */; };
 		2DF58B5D266601590048FCAE /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DF58B5C266601590048FCAE /* CustomView.xib */; };
-		2DF58B62266609960048FCAE /* SFProText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DF58B602666092F0048FCAE /* SFProText-Regular.ttf */; };
 		2DF58B6A266638680048FCAE /* CollectionUIView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DF58B69266638680048FCAE /* CollectionUIView.xib */; };
 		2DF58B6C266638760048FCAE /* CollectionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF58B6B266638760048FCAE /* CollectionUIView.swift */; };
 		2DF58B6F2666393C0048FCAE /* CollectionViewDesignCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF58B6D2666393C0048FCAE /* CollectionViewDesignCell.swift */; };
@@ -80,7 +79,6 @@
 		2DF58B542665FB130048FCAE /* MainVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVc.swift; sourceTree = "<group>"; };
 		2DF58B5A2665FC3E0048FCAE /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		2DF58B5C266601590048FCAE /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
-		2DF58B602666092F0048FCAE /* SFProText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Regular.ttf"; sourceTree = "<group>"; };
 		2DF58B69266638680048FCAE /* CollectionUIView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionUIView.xib; sourceTree = "<group>"; };
 		2DF58B6B266638760048FCAE /* CollectionUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionUIView.swift; sourceTree = "<group>"; };
 		2DF58B6D2666393C0048FCAE /* CollectionViewDesignCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDesignCell.swift; sourceTree = "<group>"; };
@@ -176,7 +174,6 @@
 				2DF58B242665F64F0048FCAE /* Assets.xcassets */,
 				2DF58B262665F64F0048FCAE /* LaunchScreen.storyboard */,
 				2DF58B292665F64F0048FCAE /* Info.plist */,
-				2DF58B602666092F0048FCAE /* SFProText-Regular.ttf */,
 				2DF58B4F2665F7480048FCAE /* TableViewDesign */,
 				2DF58B542665FB130048FCAE /* MainVc.swift */,
 				2DF58B7326667D560048FCAE /* ModelView.swift */,
@@ -361,7 +358,6 @@
 				2DF58B532665F7820048FCAE /* TableViewDesignCell.xib in Resources */,
 				2DFB2CB826673DCC00CFE879 /* NewView.xib in Resources */,
 				2DF58B6A266638680048FCAE /* CollectionUIView.xib in Resources */,
-				2DF58B62266609960048FCAE /* SFProText-Regular.ttf in Resources */,
 				2DFB2CBC2667882000CFE879 /* ScrollView.xib in Resources */,
 				2DF58B7226667D310048FCAE /* ModelView.xib in Resources */,
 				2DF58B702666393C0048FCAE /* CollectionViewDesignCell.xib in Resources */,

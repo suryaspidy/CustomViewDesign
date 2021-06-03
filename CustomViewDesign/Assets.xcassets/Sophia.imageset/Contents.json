@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "happy_woman_outdoors_clouds-1200x628-facebook.20180427215822123-1200x628.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
